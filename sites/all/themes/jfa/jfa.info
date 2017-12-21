@@ -1,0 +1,22 @@
+name = Jacqueline Fine Arts
+description = Template made by Arne Sneyers for Convert Media
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = css/bootstrap.min.css
+stylesheets[all][] = css/style.css
+
+scripts[] = js/bootstrap.min.js
+scripts[] = js/jquery.multicheckbox.js
+
+regions[search] = search
+regions[menu] = menu
+regions[cart] = cart
+regions[slide] = slide
+regions[content] = content
+regions[services] = services
+
+regions[artists] = artists
+regions[leftcol] = leftcol
+regions[shop] = shop
+regions[footer] = footer

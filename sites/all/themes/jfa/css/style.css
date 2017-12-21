@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Ubuntu');
+
+body{
+	font-size: 17px;
+}
+body > #logo {
+	margin-top: 75px;
+}
+h1 {
+    font-size: 1.8em;
+    line-height: 48px;
+    margin-top: 0;
+    margin-bottom: .8em;
+    font-family: 'Ubuntu', sans-serif;
+}
+.front h1 {
+	text-align: center;
+	margin-bottom: 0;
+}
+h2 {
+	font-size: 1.6em;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: underline;
+  	text-decoration-skip: ink;
+}
+h3 {
+	font-size: 1.2em;
+    font-family: 'Ubuntu', sans-serif;
+}
+p {
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+}
+a, a:hover, a:active{
+	color: #333;
+}
+.clear{
+	clear: both;
+}
+.img-slide {
+	margin-bottom: 20px;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+label, .field .field-label, .commerce-product-sku-label{
+	font-weight: normal;
+}
+section{
+	margin-bottom: 30px;
+}
+#logo{
+	margin-bottom: 25px;
+}
+
+@media (min-width:768px){
+	body{
+		font-size: 14px;
+	}
+	#logo{
+		margin-bottom: 40px;
+	}
+}
+@media (min-width:992px){
+	#logo{
+		margin-bottom: 50px;
+	}
+}
+@media (min-width:1200px){
+	body{
+		font-size: 17px;
+	}
+}
+
+
+/* TOP NAVIGATION */
+
+#nav-buttons{
+	margin-top: 20px;
+}
+#nav-buttons .block{
+	float: right;
+	margin-left: 15px;
+}
+form#search-block-form {
+    float: left;
+    width: 100%;
+    height: 25px;
+}
+form#search-block-form #edit-search-block-form--2{
+    border: 1px solid #000;
+	float: left;
+}
+form#search-block-form .form-submit{
+	height: 28px;
+	width: 28px;
+	float: left;
+	color: #000;
+	background: #000 url('/projects/jfa/sites/all/themes/jfa/img/ui-search-icon.svg') no-repeat 50% 50%;
+	background-size: 70%;
+	border: 1px solid #000;
+	text-indent: -99999px
+}
+
+
+/* COMMERCE */
+
+.line-item-quantity::before{
+	content: '';
+	display: block;
+	background: url(../img/shop-icon.png);
+	width: 32px;
+	height: 32px;
+}
+#cart{
+	background: #414141;
+	color: #fcfcfc;
+	padding: 9px 0 14px;
+}
+.view-commerce-cart-block{
+	float: right;
+	margin: 0 15px 0 0;
+}
+.line-item-summary{
+	margin: 0;
+}
+.line-item-quantity::before{
+	position: relative;
+}
+.line-item-quantity::before{
+	content: '';
+	display: block;
+	background: url('../img/shop-cart-icon.svg') no-repeat;
+	background-size: 100%;
+	width: 24px;
+	height: 24px;
+}
+li.line-item-summary-view-cart{
+	padding: 0;
+}
+.line-item-summary-view-cart{
+	opacity: 0;
+    width: 37px;
+    height: 37px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.line-item-summary-view-cart a{
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+.view-commerce-cart-block .view-content,.line-item-quantity-raw, .line-item-quantity-label, .line-item-total, ul.inline .line-item-summary-checkout{
+	display: none;
+}
+
+
+/* WISHLIST */
+
+.view-wishlist.view-id-wishlist.view-display-id-block_1{
+    float: right;
+    width: 22px;
+	margin: 2px 5px 0 0;
+}
+.view-wishlist.view-id-wishlist.view-display-id-block_1 ul li{
+	margin: 0;
+	list-style: none;
+}
+.view-wishlist.view-id-wishlist.view-display-id-block_1 ul li a{
+	width: 20px;
+	margin: 0;
+	padding: 0;
+}
+#webform-component-link, #webform-component-e-mail{
+	display: none;
+}
+
+
+/*  MENU */
+
+.navbar-default, .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    background-color: transparent;
+	border-color: transparent;
+    width: 100%;
+    min-height: 0;
+    margin-bottom: 2px;
+    padding: 0;
+}
+.navbar-collapse ul.nav {
+	text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.navbar-collapse li {
+    vertical-align: top;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.navbar-collapse ul li a{
+	display: block;
+	text-align: center;
+    width: 100%;
+    font-size: .83em;
+    color: #000 !important;
+    transition: all 1s ease-out;
+    line-height: 25px;
+}
+.navbar-collapse ul li a.active{
+	background: #eee;
+}
+.navbar-collapse ul li a.active:hover{
+	background: #eaeaea;
+    color: #000 !important;
+}
+.navbar-collapse ul li a:hover{
+    color: #444 !important;
+}
+.navbar-collapse img{
+	float: right;
+	line-height: 30px;
+}
+header .clear{
+	border-bottom: 1px solid #000;
+	margin-bottom: 25px;
+}
+
+.cart-empty-block{
+	display: none;
+
+}
+div#block-block-7 * {
+    margin: 0;
+    float: right;
+}
+
+@media (min-width: 768px){
+	.navbar-collapse ul.nav {
+	    width: auto;
+	    float: left;
+		margin: 0;
+	}
+	.navbar-collapse ul li{
+	    width: auto;
+	}
+	.navbar-collapse ul li a{
+		width: auto;
+		line-height: 25px;
+		margin: 5px 15px;
+		padding: 3px 9px;
+	}
+	form#search-block-form {
+	    width: auto;
+	}
+}
+
+
+/* FRONT */
+
+.front h1{
+	margin: 40px 0;
+}
+#services{
+	padding-bottom: 60px;
+	border-bottom: 1px solid #000;
+	margin-bottom: 60px;
+}
+#services .views-row > div:last-child{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #000;
+}
+/* .view-shop, .view-taxonomy-term .view-content{
+	text-transform: uppercase;
+} */
+.views-field.views-field-edit-product{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    background: url('http://jacquelinefinearts.be/sites/all/themes/jfa/img/ui-edit-icon.svg');
+    background-size: 100%;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+}
+.views-field.views-field-edit-product a{
+    text-indent: -9999px;
+    display: inline-block;
+    width: 100%;
+}
+.views-field.views-field-field-kunstwerk .field-content, .magnific_popup-processed {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+	margin-bottom: 25px;
+}
+.mfp-item img, .view-shop img, .view-taxonomy-term .view-content img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: auto;
+	width: auto;
+	max-width: 100%;
+	max-height: 100%;
+	transform: translate(-50%, -50%);
+}
+.views-field-commerce-price{
+	padding-bottom: 50px;
+	border-bottom: 1px solid #000;
+	margin-bottom: 50px;
+}
+div#block-views-artist-block div.col-xs-12 > div:last-child{
+	padding-bottom: 40px;
+	border-bottom: 1px solid #000;
+	margin-bottom: 50px;
+}
+div#block-views-artist-block-1{
+	clear: both;
+}
+div#block-views-artist-block-1 div.view-content{
+	clear: both;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #000;
+	margin-bottom: 40px;
+}
+.view-kunstenaars.view-display-id-block .col-xs-12{
+	margin-bottom: 50px;
+}
+
+
+/* SHOP */
+
+.view-filters{
+	padding: 0;
+}
+.view-filters .col-xs-12{
+	background: #cdffff;
+}
+.view-filters .views-exposed-widget{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.view-filters .views-exposed-form{
+	font-size: .9em;
+}
+.view-filters .form-type-checkbox, .view-filters .form-type-bef-checkbox{
+	border-bottom: 1px solid #000;
+	width: auto;
+    display: inline-block;
+    clear: left;
+    float: left;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+/*.view-filters .form-type-checkbox *{
+    cursor: pointer;
+}
+.view-filters input{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	padding: 0;
+	width: 6px;
+}
+.view-filters input:checked:before {
+    content: 'x';
+    display: block;
+    margin-top: -2px;
+}*/
+.views-exposed-form label {
+    font-weight: normal;
+}
+input[type=checkbox], input[type=radio] {
+    margin: 0;
+}
+.page-kunstwerken .view-shop .col-sm-8, .page-kunstwerken .view-shop .col-md-9{
+	padding: 0;
+}
+.product ul {
+	padding-left: 0;
+}
+.product li {
+	float: left;
+	clear: both;
+}
+.product li:last-child{
+	float: none;
+	clear: both;
+	margin-bottom: 15px;
+}
+.field-label-inline .field-label, .field-label-inline .field-items{
+    display: inline-block;
+    float: none;
+}
+.product ul:last-child{
+	margin-bottom: 30px;
+}
+.product .commerce-product-field{
+	display: inline-block;
+}
+.product h2 .commerce-product-field{
+	float: none;
+}
+.field-name-field-kunststijle, .field-name-field-kunststijle .field-label, .field-name-field-kunststijle .field-item, .field-name-field-kunststijle .field-items{
+	float: left;
+	margin-left: 2px;
+}
+.field-name-field-kunststijle .field-item:after{
+	content: ',';
+}
+.field-name-field-kunststijle .field-item:last-child:after{
+	content: none;
+}
+.field-type-commerce-product-reference{
+	float: left;
+}
+.field-type-commerce-product-reference input{
+	float: left;
+}
+.product .form-submit{
+    background: #fff;
+	border-radius: none;
+	border: 2px solid #333;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-top: 30px;
+}
+.product .form-submit:hover{
+    background: #333;
+    color: #fff;
+}
+
+@media (min-width: 400px){
+	.view-filters .views-exposed-widget{
+		width: 50%;
+	}
+}
+@media (min-width: 600px){
+	.view-filters .views-exposed-widget{
+		width: 33.33333333%;
+	}
+}
+@media (min-width: 768px){
+	.product li{
+		margin: 0 0 0 30px;
+	}
+	.view-filters{
+		padding: 0 15px;
+	}
+	.view-filters .views-exposed-widget{
+		clear: left;
+		width: 100%;
+	}
+}
+
+
+@media (min-width:1200px){
+    .col-lg-1:nth-child(12n+1){clear:left;}
+    .col-lg-2:nth-child(6n+1){clear:left;}
+    .col-lg-3:nth-child(4n+1){clear:left;}
+    .col-lg-4:nth-child(3n+1){clear:left;}
+    .col-lg-6:nth-child(odd){clear:left;}
+}
+@media (min-width:992px) and (max-width:1199px){
+    .col-md-1:nth-child(12n+1){clear:left;}
+    .col-md-2:nth-child(6n+1){clear:left;}
+    .col-md-3:nth-child(4n+1){clear:left;}
+    .col-md-4:nth-child(3n+1){clear:left;}
+    .col-md-6:nth-child(odd){clear:left;}
+}
+@media (min-width:768px) and (max-width:991px){
+    .col-sm-1:nth-child(12n+1){clear:left;}
+    .col-sm-2:nth-child(6n+1){clear:left;}
+    .col-sm-3:nth-child(4n+1){clear:left;}
+    .col-sm-4:nth-child(3n+1){clear:left;}
+    .col-sm-6:nth-child(odd){clear:left;}
+}
+@media (max-width:767px){
+    .col-xs-1:nth-child(12n+1){clear:left;}
+    .col-xs-2:nth-child(6n+1){clear:left;}
+    .col-xs-3:nth-child(4n+1){clear:left;}
+    .col-xs-4:nth-child(3n+1){clear:left;}
+    .col-xs-6:nth-child(odd){clear:left;}
+}
